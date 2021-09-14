@@ -11,15 +11,15 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("col");
-    div.innerHTML = `<div class="card card-body text-center single-product"  style="background-color:rgb(234, 247, 247)">
+    div.innerHTML = `<div class="card card-body rounded-3 text-center single-product"  style="background-color:rgb(234, 247, 247)">
     <div>
       <img class="product-image" src=${image}></img>
       </div>
-      <h5>${product.title}</h5>
+      <div><h5 class="fw-bold">${product.title}</h5></div>
       <p><span class="fw-bold"> Catagory : <span class="fw-normal"> ${product.category} </p>
       <p><span class="fw-bold"> Ratings : <span class="fw-normal"> ${product.rating.rate} </p>
-      <p><span class="fw-bold"> Ratings Count : <span class="fw-normal"> ${product.rating.count}</p>
-      <h3>Price: $ ${product.price}</h3>
+      <p><span class="fw-bold"> Rating Count : <span class="fw-normal"> ${product.rating.count}</p>
+      <h4>Price: $ ${product.price}</h4>
       <div class="d-flex align-items-center justify-content-evenly">
     
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>

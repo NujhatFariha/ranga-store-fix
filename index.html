@@ -16,23 +16,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <header></header>
-  <main class="main container">
-      <div class="input-group my-5 w-25 mx-auto"   style="background-color:rgb(238, 238, 238);">
-        <input id="input-field" type="text" class="form-control border-2 border-secondary rounded-3" aria-label="search">
-        <button onclick="searchBook()" class="button-style rounded-3 ms-1" type="button">Search</button>
-      </div>
+  <main class="main">
+    <h1 class="text-center">Welcome to <span class="fw-bold fs-1" style="color: rgba(94, 17, 94, 0.808);">Ranga Store</span></h1>
+    <!-- search field -->
+    <div class="input-group mb-5 mt-5 w-25 mx-auto">
+      <input id="input-field" type="text" class="form-control border-2 border-secondary rounded-pill" aria-label="search">
+      <button onclick="searchBook()" class="button-style rounded-pill ms-1" type="button">Search</button>
+    </div>
 
     <section class="mb-5">
+      <!-- all products -->
       <div class="row g-5">
-        <div class="col-md-9 col-lg-9 col-sm-7">
+        <div class="col-md-9 col-lg-7col-sm-7">
           <div id="all-products" class="">
           </div>
         </div>
+        <!-- cart -->
         <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
-          <div class="cart mt-4" id="my-cart">
+          <div class="cart" id="my-cart">
             <table class="table">
               <thead>
                 <h1>My-Cart</h1>
