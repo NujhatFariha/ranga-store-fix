@@ -18,7 +18,7 @@ const showProducts = (products) => {
       <div><h5 class="fw-bold">${product.title}</h5></div>
       <p><span class="fw-bold"> Catagory : <span class="fw-normal"> ${product.category} </p>
       <p><span class="fw-bold"> Ratings : <span class="fw-normal"> ${product.rating.rate} </p>
-      <p><span class="fw-bold"> Rating Count : <span class="fw-normal"> ${product.rating.count}</p>
+      <p><span class="fw-bold"> Total Review : <i class="fas fa-user"></i> <span class="fw-normal"> ${product.rating.count}</p>
       <h4>Price: $ ${product.price}</h4>
       <div class="d-flex align-items-center justify-content-evenly">
     
